@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guerra Fria</title>
+    <link rel="stylesheet" href="css/design.css">
+</head>
+
+<body>
+
+    <div class="bck">
+        <a href="content/nomes.html" class="title ae">
+            <h1 class="ae">GUERRA FRIA</h1>
+        </a>
+        <div class="menu">
+            <nav class="links">
+                <a href="content/intro.html">Introdução</a>
+                <a href="content/fases.html">Fases Da Guerra Fria</a>
+                <a href="content/oqf.html">O que foi a Guerra Fria</a>
+                <a href="content/objetivos.html">Quais eram os objetivos dos paises na Guerra Fria?</a>
+                <a href="content/fim.html">Fim</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="maincontent">
+        <div class="main2" id="main2"></div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            const conteudo = document.getElementById('main2')
+
+            link.onclick = function (e) {
+                e.preventDefault()
+                fetch(link.href)
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+</body>
+
+</html>

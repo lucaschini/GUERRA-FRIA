@@ -1,0 +1,30 @@
+.ptitle {
+    color: #ffffff;
+    margin-left: 2vw;
+    font-size: 50px;
+}
+
+.sub {
+    color: #ffffff;
+    margin-left: 2vw;
+}
+
+.text {
+    font-size: 20px;
+    color: #ffffff;
+    white-space: normal;
+    margin-left: 5vw;
+    margin-right: 15vw;
+}
+
+.flinks{
+    text-decoration: none;
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+
+.flinks:hover{
+    background-color: #737373;
+    border-radius: 20px;
+}

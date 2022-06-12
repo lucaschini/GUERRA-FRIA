@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+body{
+  background-image: url("/imgs/bk.png");
+  background-size: cover;
+  font-family: 'Oswald';
+  margin: 0px;
+}
+
+.ae {
+  margin-top: 47px;
+  margin-left: 3.39%;
+}
+
+.bck {
+  width: 405px;
+  min-height: 100vh;
+  /*background-color: #107007;
+   background-image: url("/imgs/bk.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title{
+  text-align: center;
+  font-size: 35px;
+  width: fit-content;
+  height: fit-content;
+  text-decoration: none; 
+  color:rgb(255, 255, 255);
+}
+
+.title h1{
+  margin: 0px;
+}
+
+.menu { 
+  display: flex;
+  justify-content: center;
+  height: 290px;
+  margin-top: 120px;
+  margin-left: 5.94%;
+}
+
+.links {
+  display: grid;
+  text-align: center;
+  align-items: center;
+}
+
+.links a {
+  
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+.links a:hover {
+  border: solid white 5px;
+  background-color: none;
+}
+
+.maincontent {
+  width: 1500px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  position: absolute;
+  left: 21.09%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.main2 {
+  width: 1441px;
+  height: 859px;
+  overflow: auto;
+  text-indent: 30px;
+  border-radius: 10px;
+}
+
+.main2::-webkit-scrollbar{
+  width: 10px;
+}
+
+.main2::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: white;        /* color of the tracking area */
+}
